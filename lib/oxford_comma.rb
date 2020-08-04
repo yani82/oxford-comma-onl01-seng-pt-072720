@@ -4,7 +4,7 @@ case array.size
 when 0 
   ''
   when 1 
-    array[0].to_s 
+    array.first
     when 2
       array.join(' and ')
     else 
