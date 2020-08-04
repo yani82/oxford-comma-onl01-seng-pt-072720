@@ -8,9 +8,7 @@ when 0
     when 2
       array.join(' and ')
     else 
-      array_copy = array 
-      array_copy [-1] = "and #{array_copy[-1]}"
-      array_copy.join(',')
+      [array[0..-2].join(', '), array.last].join(', and ')
     end 
   end 
       
